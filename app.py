@@ -18,11 +18,11 @@ st.write("Modelo entrenado con pocos registros entre 2016 y 2025 usando Pipeline
 
 # Entradas del usuario
 x1 = st.number_input("Valor de Año 1", value=2026.0)
-x2 = st.number_input("Valor de Año 2", value=2027.0)
+#x2 = st.number_input("Valor de Año 2", value=2027.0)
 
 if st.button("Predecir"):
     try:
-        pred = model.predict(np.array([[x1, x2]]))
-        st.success(f"Predicción: {pred[0]:.4f}")
+        pred = model.predict([[x1]])
+        st.success(f"Predicción: Gs. {pred[0]:,.0f}")
     except Exception as e:
         st.error(f"Error en la predicción: {e}")
