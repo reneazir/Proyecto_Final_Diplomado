@@ -1,2 +1,4 @@
-# Proyecto_Final_Diplomado
-Final test para Modelo Funcional sobre materias del diplomado ML
+## Proyecto implementado en Python
+
+### Requisitos
+ - Python 3
